@@ -19,7 +19,7 @@ function letterCombinations(input) {
 		let currentchar = input[currentIndex]
 		for(let i=0;i<table[currentchar].length ; i++)
 			{
-				solve(currentIndex+ 1,calString+ table[currentchar])
+				solve(currentIndex+ 1,calString+ table[currentchar][i])
 			}
 	}
 	solve(0,"")
